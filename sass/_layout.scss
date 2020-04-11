@@ -1,0 +1,14 @@
+/* Global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  min-height: 7rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

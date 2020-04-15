@@ -25,7 +25,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace, 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
   background-size: cover;
@@ -48,17 +48,17 @@ body {
   padding: 2.5rem; }
 
 .nav-btn {
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
   font-family: 'Roboto Mono', monospace;
   outline: none;
   font-size: 3.5rem;
   background-color: #10496E;
-  text-shadow: 1.5px 1.5px #E0E030;
+  text-shadow: 1.5px 1.5px var(--color-barberry-dark-1);
   border: none;
   cursor: pointer; }
   .nav-btn:hover {
-    color: #E0E030;
+    color: var(--color-barberry-light-2);
     text-shadow: 1.5px 1.5px #000000;
     animation: pulsate 1s infinite; }
   .nav-btn:visited {
@@ -75,14 +75,12 @@ body {
     box-shadow: 0 1rem 4rem rbga(0, 0, 0, 0.25); }
   100% { } }
 
-.hero {
+.hero-vid {
   min-height: 400px;
   background: url("../img/dev_vid.gif") no-repeat 0;
-  text-align: center;
-  height: 400px;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: auto 130%;
+  background-size: cover;
   position: relative; }
 
 .intro {
@@ -91,11 +89,12 @@ body {
   font-weight: bold;
   font-family: 'Roboto Mono', monospace;
   font-size: 2.5rem;
-  text-shadow: 1.5px 1.5px #E0E030;
+  text-shadow: 1.5px 1.5px var(--color-barberry-light-2);
   background-color: var(--color-blue-dark-1);
   margin: 1.5rem 1.5rem;
   border-radius: 25px;
-  box-shadow: var(--shadow-dark); }
+  box-shadow: var(--shadow-dark);
+  color: #fff; }
   .intro__sentence {
     padding: 1.5rem 3rem; }
 
@@ -103,9 +102,9 @@ body {
   font-weight: bold;
   font-family: 'Roboto Mono', monospace;
   font-size: 3.5rem;
-  text-shadow: 1.5px 1.5px #E0E030;
+  text-shadow: 1.5px 1.5px var(--color-barberry-light-2);
   background-color: #fff;
-  color: #000000;
+  color: #fff;
   outline: none;
   background-color: transparent;
   border: none;
@@ -128,6 +127,20 @@ body {
     transform: translateY(100%); }
   .btn:hover .btn__invisible {
     top: 0; }
+
+.bio {
+  font-size: 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color-barberry-dark-1);
+  margin: 1.5rem 1.5rem;
+  border-radius: 25px;
+  box-shadow: var(--shadow-dark); }
+  .bio__text {
+    padding: 2.5rem;
+    color: #fff; }
 
 /* projects */
 #projects {

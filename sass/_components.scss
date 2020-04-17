@@ -112,7 +112,7 @@
   font-size: 2.5rem;
   text-shadow: 3.5px 3.5px var(--color-blue-dark-2);
   background-color: var(--color-blue-dark-1);
-  margin: 1.5rem 1.5rem;
+  margin: 1.5rem 18.5rem;
   border-radius: 25px;
   box-shadow: var(--shadow-dark);
   color: #fff;
@@ -191,24 +191,20 @@
 
 ///////////////////////////////////
 //////// PROJECTS
-
-.project-title {
+.project-title-container {
   display: flex;
   justify-content: center;
-  font-weight: bold;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 2.5rem;
-  text-shadow: 3.5px 3.5px var(--color-blue-dark-2);
   background-color: var(--color-blue-dark-1);
-  margin: 1.5rem 1.5rem;
   border-radius: 25px;
   box-shadow: var(--shadow-dark);
+  margin: auto 50rem;
+}
+.project-title {
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 4.5rem;
+  text-shadow: 3.5px 3.5px var(--color-blue-dark-2);
   color: var(--color-barberry-light-1);
-
-  &__sentence {
-    padding: 1.5rem 3rem;
-  }
-
 }
 
 .project-section {
@@ -218,14 +214,14 @@
 .projects-container {
   display:grid;
   grid-template-columns: 1fr 1fr;
-
 }
 
 .project-header {
   text-align: center;
   font-weight: bold;
+  text-decoration: underline;
   font-family: 'Roboto Mono', monospace;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-shadow: 3.5px 3.5px var(--color-blue-dark-2);
   color: var(--color-barberry-light-1);
 }
@@ -238,6 +234,7 @@
 }
 
 .project-description {
+  font-size: 2rem;
   text-align: center;
   padding: 2.5rem;
   color: #fff;

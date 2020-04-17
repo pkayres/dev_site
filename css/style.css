@@ -189,13 +189,15 @@ body {
   border: 1.5rem solid var(--color-blue-dark-1);
   border-radius: 25px;
   box-shadow: var(--shadow-dark);
-  width: 300px; }
+  width: 300px;
+  height: 230px;
+  margin: 15px; }
   .project-image:hover {
     border: 1.5rem solid var(--color-barberry-light-1); }
 
 .tech-container {
   background-color: var(--color-barberry-light-1);
-  margin: 0 7.5rem;
+  margin: 15px;
   border-radius: 25px;
   box-shadow: var(--shadow-dark); }
 
@@ -210,9 +212,14 @@ body {
 
 .tech-link-container {
   background-color: var(--color-blue-dark-1);
-  margin-top: 3.5rem;
+  margin: 10px;
+  height: 50px;
   border-radius: 25px;
   box-shadow: var(--shadow-dark); }
+
+.tech-link-text {
+  padding: 10px;
+  color: white; }
 
 .footer {
   padding: 20px;

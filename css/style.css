@@ -214,34 +214,11 @@ body {
   border-radius: 25px;
   box-shadow: var(--shadow-dark); }
 
-/* Main-col */
-article#main-col {
-  float: left;
-  width: 65%; }
-
-/*side bar */
-aside#sidebar {
-  float: right;
-  width: 30%;
-  margin-top: 10px; }
-
-aside#sidebar .quote input, aside#sidebar .quote textarea {
-  width: 90%;
-  padding: 5px; }
-
-/* Services */
-ul#services li {
-  list-style: none;
-  padding: 20px;
-  border: #cccccc solid 1px;
-  margin-bottom: 5px;
-  background: #e6e6e6; }
-
-footer {
+.footer {
   padding: 20px;
   margin-top: 20px;
   color: #ffffff;
-  background-color: #e8491d;
+  background-color: var(--color-blue-dark-2);
   text-align: center; }
 
 /* Media Queries */

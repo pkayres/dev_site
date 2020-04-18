@@ -260,6 +260,7 @@
   box-shadow: var(--shadow-dark);
   margin: 15px;
   width: 350px;
+  height: 270px;
 
   &:hover {
     border: 1.5rem solid var(--color-barberry-light-1);
@@ -294,25 +295,66 @@
 
 .tech-link-text {
   margin: 0 auto;
-padding: 10px;
+  padding: 10px;
+  color: #fff;
   width: 90%;
   padding: 10px;
-  border-radius: 25px;
   font-size: 1.5rem;
   margin-top: 20px;
   margin-bottom: 15px;
   box-shadow: var(--shadow-dark);
-  background-color: var(--color-barberry-light-1);
+  background-color: var(--color-blue-dark-2);
 }
 
+
+//////////////////////////////////
+/////// FOOTER
 
 .footer {
   padding: 20px;
-  margin-top: 20px;
   color: #ffffff;
   background-color: var(--color-blue-dark-2);
   text-align: center;
+  font-size: 2.5rem;
 }
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.icon {
+  margin: 0 15px 10px 15px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  width: 8rem;
+
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    stroke-width: 0;
+    stroke: var(--color-barberry-light-1);
+    fill: var(--color-barberry-light-1);
+  }
+}
+
+.resume-link {
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  outline: none;
+  font-size: 2.5rem;
+  text-shadow: 3.5px 3.5px var(--color-blue-dark-1);
+
+  &:hover {
+    color: var(--color-barberry-light-1);
+    text-shadow: 1.5px 1.5px #000000;
+    animation: pulsate 1s infinite;
+  }
+}
+
 
 /* Media Queries */
 @media(max-width: 768px){

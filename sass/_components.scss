@@ -17,7 +17,7 @@
 .nav-btn {
   color: #fff;
   font-weight: bold;
-  font-family: OstrichSans-Bold;
+  font-family: 'ostrich_sansbold';
   outline: none;
   font-size: 3.5rem;
   background-color: #10496E;
@@ -44,8 +44,12 @@
 }
 
 @font-face {
-  font-family: OstrichSans-Bold;
-  src: url(OstrichSans-Bold.otf);
+    font-family: 'ostrich_sansbold';
+    src: url(http://127.0.0.1:8080/sass/'ostrichsans-bold-webfont.woff2') format('woff2'),
+         url('ostrichsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 
@@ -286,20 +290,45 @@
 .img-container {
   display: flex;
   justify-content: center;
-
+  position: relative;
 }
 
 .project-image {
-  border: 1.5rem solid var(--color-blue-dark-1);
-  border-radius: 25px;
-  box-shadow: var(--shadow-dark);
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
   margin: 15px;
   width: 350px;
   height: 270px;
+  border: .8rem solid var(--color-blue-dark-1);
+}
 
-  &:hover {
-    border: 1.5rem solid var(--color-barberry-light-1);
-  }
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img-container:hover .project-image {
+  opacity: 0.3;
+}
+
+.img-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+ font-size: 2rem;
+ color: white;
+
 }
 
 .tech-container {
@@ -307,8 +336,7 @@
 }
 
 .tech-text {
-  border-radius: 25px;
-  box-shadow: var(--shadow-dark);
+  box-shadow: 8px 8px 0 var(--color-blue-dark-1);
   background-color: var(--color-barberry-light-1);
   margin: 0 auto;
   padding: 10px;
@@ -329,6 +357,7 @@
 }
 
 .tech-link-text {
+  cursor: pointer;
   margin: 0 auto;
   padding: 10px;
   color: #fff;
@@ -337,8 +366,13 @@
   font-size: 1.5rem;
   margin-top: 20px;
   margin-bottom: 15px;
-  box-shadow: var(--shadow-dark);
+  box-shadow: 6px 6px 0 #fff;
   background-color: var(--color-blue-dark-2);
+
+  &:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 4px 4px 0;
+  }
 }
 
 

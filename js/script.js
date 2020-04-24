@@ -3,20 +3,15 @@
 
 function navScroll(event){
   let navId = event.target.id;
-  let windowSize = window.innerHeight;
-  console.log(windowSize);
+
   if (navId === 'intro' ) {
     window.scroll({
       top: 400,
       behavior: 'smooth'
     });
   }
-
   if (navId === 'contact'){
-    window.scroll({
-      top: 1000,
-      behavior: 'smooth'
-    });
+    window.scrollTo(0,document.body.scrollHeight);
   }
 }
 

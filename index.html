@@ -16,9 +16,9 @@
     <header class="header">
 
         <nav class="nav-list">
-          <button class="nav-btn"><a href="#bio" >Bio</a></button>
-          <button class="nav-btn"><a href="#projects" >Projects</a></button>
-          <button class="nav-btn"><a href="#contact" >Contact</a></button>
+          <button onClick="navScroll(event)" id="intro" class="nav-btn" type="button">Bio</button>
+          <button onClick="navProjects(event)" id="projects" class="nav-btn" type="button">Projects</button>
+          <button onClick="navScroll(event)" id="contact"  class="nav-btn" type="button">Contact</button>
         </nav>
 
     </header>
@@ -26,8 +26,8 @@
 
     <div class="hero-vid"></div>
 
-    <section id="bio" class="intro">
-        <h1 class="intro__sentence"> Hi, my name is Pete, I'm a
+    <section class="intro">
+        <h1  class="intro__sentence"> Hi, my name is Pete, I'm a
         <div class="slidingHorizontal">
             <span>developer.</span>
             <span>musician.</span>
@@ -39,7 +39,7 @@
     </section>
 
 
-    <section  class="bio">
+    <section class="bio">
         <p class="bio__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
         </p>
@@ -48,9 +48,9 @@
         </p>
     </section>
 
-    <section id="projects" class="project-section">
+    <section class="project-section">
       <div class="project-title-container">
-        <h1 class="project-title">Projects</h1>
+        <h1 id="projects" class="project-title">Projects</h1>
       </div>
 
 
@@ -138,4 +138,6 @@
     </footer>
 
   </body>
+
+  <script src="js/script.js"></script>
 </html>

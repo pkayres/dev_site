@@ -307,6 +307,8 @@
   margin: 0 auto;
   padding: 10px;
   width: 90%;
+
+
 }
 
 .tech-link-text {
@@ -322,13 +324,21 @@
   box-shadow: 6px 6px 0 #fff;
   background-color: var(--color-blue-dark-2);
 
+  &__link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+
   &:hover {
     transform: translate(2px, 2px);
     box-shadow: 4px 4px 0;
   }
-  a:visited {
-    color: inherit;
-  }
+
 }
 
 
@@ -362,6 +372,10 @@
     stroke-width: 0;
     stroke: var(--color-barberry-light-1);
     fill: var(--color-barberry-light-1);
+  }
+
+  a:visited {
+    fill: #fff;
   }
 }
 

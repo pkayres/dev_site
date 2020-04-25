@@ -274,11 +274,15 @@ body {
   margin-bottom: 15px;
   box-shadow: 6px 6px 0 #fff;
   background-color: var(--color-blue-dark-2); }
+  .tech-link-text__link {
+    text-decoration: none;
+    color: #fff; }
+  .tech-link-text:visited {
+    text-decoration: none;
+    color: #fff; }
   .tech-link-text:hover {
     transform: translate(2px, 2px);
     box-shadow: 4px 4px 0; }
-  .tech-link-text a:visited {
-    color: inherit; }
 
 .footer {
   padding: 2rem;
@@ -304,6 +308,8 @@ body {
     stroke-width: 0;
     stroke: var(--color-barberry-light-1);
     fill: var(--color-barberry-light-1); }
+  .icon a:visited {
+    fill: #fff; }
 
 .resume-link {
   color: #fff;

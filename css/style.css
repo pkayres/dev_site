@@ -179,7 +179,7 @@ body {
 
 .projects-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
   grid-gap: 15px;
   margin: 1.5rem; }
 
@@ -194,6 +194,7 @@ body {
 
 .project-container {
   background-color: var(--color-blue-light-1);
+  padding: 1.5rem;
   border-radius: 25px;
   box-shadow: var(--shadow-dark);
   width: 100%; }
@@ -221,7 +222,7 @@ body {
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
-  margin: 15px;
+  margin: 14px 0;
   border: 0.8rem solid var(--color-blue-dark-1); }
 
 .img-container:hover .project-image {
@@ -230,10 +231,10 @@ body {
 .watch-link-text {
   text-decoration: none;
   cursor: pointer;
-  margin: 0 auto;
   padding: 10px;
   color: #fff;
-  width: 90%;
+  margin: 0 auto;
+  width: 19rem;
   font-size: 1.5rem;
   box-shadow: 6px 6px 0 #fff;
   background-color: var(--color-blue-dark-2); }
@@ -264,14 +265,12 @@ body {
 
 .tech-link-text {
   cursor: pointer;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 10px;
   color: #fff;
-  width: 90%;
+  width: 19rem;
   padding: 10px;
   font-size: 1.5rem;
-  margin-top: 20px;
-  margin-bottom: 15px;
   box-shadow: 6px 6px 0 #fff;
   background-color: var(--color-blue-dark-2); }
   .tech-link-text__link {

@@ -427,6 +427,10 @@
   a:visited {
     fill: #fff;
   }
+
+  @media only screen and (max-width: 360px){
+    width: 6rem;
+  }
 }
 
 .resume-link {
@@ -441,5 +445,9 @@
     color: var(--color-barberry-light-1);
     text-shadow: 1.5px 1.5px var(--color-blue-dark-3);
     animation: pulsate 1s infinite;
+  }
+
+  @media only screen and (max-width: 360px){
+    font-size: 2rem;
   }
 }

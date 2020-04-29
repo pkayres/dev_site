@@ -348,6 +348,9 @@ body {
     fill: var(--color-barberry-light-1); }
   .icon a:visited {
     fill: #fff; }
+  @media only screen and (max-width: 360px) {
+    .icon {
+      width: 6rem; } }
 
 .resume-link {
   color: #fff;
@@ -360,3 +363,6 @@ body {
     color: var(--color-barberry-light-1);
     text-shadow: 1.5px 1.5px var(--color-blue-dark-3);
     animation: pulsate 1s infinite; }
+  @media only screen and (max-width: 360px) {
+    .resume-link {
+      font-size: 2rem; } }

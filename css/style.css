@@ -25,7 +25,7 @@ html {
 
 body {
   font-family: 'Roboto Mono', monospace, 'Open Sans', sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1.6;
   background-size: cover;
   background-repeat: no-repeat;
@@ -175,7 +175,7 @@ body {
   justify-items: center; }
 
 .bio {
-  font-size: 2rem;
+  font-size: 1.8rem;
   background-color: var(--color-blue-light-1);
   margin: 0 10.5rem;
   border-radius: 25px;
@@ -234,7 +234,7 @@ body {
 
 .project-description {
   height: 50px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
   color: #fff; }
   @media only screen and (max-width: 710px) {
@@ -277,6 +277,10 @@ body {
   .watch-link-text:hover {
     transform: translate(2px, 2px);
     box-shadow: 4px 4px 0; }
+
+.watch-link:visited {
+  text-decoration: none;
+  color: var(--color-blue-dark-2); }
 
 .tech-container {
   padding: 14px 0; }

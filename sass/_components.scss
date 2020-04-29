@@ -41,6 +41,10 @@
     margin-right: 2.5rem;
   }
 
+  @media only screen and (max-width: 710px){
+    font-size: 2.5rem;
+  }
+
 
 }
 
@@ -92,6 +96,18 @@
     margin-right: 20rem;
     padding: 1.5rem 3rem;
 
+    @media only screen and (max-width: 890px){
+      font-size: 3rem;
+      margin-right: auto;
+    }
+
+    @media only screen and (max-width: 710px){
+      font-size: 2rem;
+      top: -1px;
+      left: 13px;
+
+    }
+
   }
 
 }
@@ -109,6 +125,10 @@
     position: absolute;
     top: -1px;
     left: 20px;
+
+    @media only screen and (max-width: 890px){
+      top: -3px;
+    }
   }
 
   & span{
@@ -121,6 +141,14 @@
     opacity: 0;
   	overflow: hidden;
     animation: leftToRight 8s linear infinite 0s;
+
+    @media only screen and (max-width: 890px){
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: 710px){
+      font-size: 2rem;
+    }
 
   }
 
@@ -177,6 +205,14 @@
     color: #fff;
   }
 
+  @media only screen and (max-width: 890px){
+    margin: 1.5rem;
+  }
+
+  @media only screen and (max-width: 710px){
+    font-size: 1.5rem;
+  }
+
 }
 
 
@@ -194,6 +230,10 @@
   font-size: 4.5rem;
   text-shadow: 3.5px 3.5px var(--color-blue-light-1);
   color: #fff;
+
+  @media only screen and (max-width: 710px){
+    font-size: 3.5rem;
+  }
 }
 
 .project-section {
@@ -202,7 +242,7 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(70rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   grid-gap: 15px;
   margin: 1.5rem;
 }
@@ -215,6 +255,10 @@
   font-size: 3.5rem;
   text-shadow: 3.5px 3.5px var(--color-blue-dark-2);
   color: var(--color-barberry-light-1);
+
+  @media only screen and (max-width: 710px){
+    font-size: 2.5rem;
+  }
 }
 
 .project-container {
@@ -230,12 +274,18 @@
   font-size: 2rem;
   text-align: center;
   color: #fff;
+
+  @media only screen and (max-width: 710px){
+    font-size: 1.5rem;
+  }
 }
 
 .project-content {
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 10px;
+
+
 }
 
 ////////////////////////////////
@@ -300,6 +350,10 @@
   margin-bottom: 10px;
   font-size: 2rem;
   text-align: center;
+
+  @media only screen and (max-width: 710px){
+    font-size: 1.5rem;
+  }
 }
 
 .tech-list {
@@ -307,8 +361,6 @@
   margin: 0 auto;
   padding: 10px;
   width: 90%;
-
-
 }
 
 .tech-link-text {

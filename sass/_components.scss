@@ -73,8 +73,8 @@
 
 .hero-vid{
   min-height: 400px;
-  background: url('../img/dev_vid.gif') no-repeat 0;
-  background-position: bottom;
+  background: url('../img/dev_vid_1.gif') no-repeat 0;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -293,8 +293,9 @@
 
 .img-container {
   display: flex;
-  justify-content: center;
   position: relative;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-image {
@@ -312,13 +313,11 @@
   border-color: var(--color-barberry-light-1);
 }
 
-.watch-link-text {
+.watch-btn {
   text-decoration: none;
   cursor: pointer;
   padding: 10px;
   color: #fff;
-  margin: 0 auto;
-  width: 19rem;
   font-size: 1.5rem;
   box-shadow: 6px 6px 0 #fff;
   background-color: var(--color-blue-dark-2);
@@ -347,12 +346,15 @@
 
 .tech-container {
   padding: 14px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tech-text {
   box-shadow: 8px 8px 0 var(--color-blue-dark-1);
   background-color: var(--color-barberry-light-1);
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 10px;
   width: 90%;
 }
@@ -374,26 +376,26 @@
   width: 90%;
 }
 
-.tech-link-text {
+.git-btn {
   cursor: pointer;
   margin: 2rem auto;
   padding: 10px;
   color: #fff;
-  width: 19rem;
-  padding: 10px;
   font-size: 1.5rem;
   box-shadow: 6px 6px 0 #fff;
   background-color: var(--color-blue-dark-2);
+  text-decoration: none;
 
-  &__link {
-    text-decoration: none;
-    color: #fff;
-  }
 
-  &:visited {
-    text-decoration: none;
-    color: #fff;
-  }
+  // &__link {
+  //
+  //   color: #fff;
+  // }
+
+  // &:visited {
+  //   text-decoration: none;
+  //   color: #fff;
+  // }
 
   &:hover {
     transform: translate(2px, 2px);

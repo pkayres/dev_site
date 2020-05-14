@@ -252,6 +252,9 @@ body {
   flex-direction: column;
   align-items: center; }
 
+.img-container:hover .project-image {
+  border-color: var(--color-barberry-light-1); }
+
 .project-image {
   opacity: 1;
   display: absolute;
@@ -261,9 +264,6 @@ body {
   backface-visibility: hidden;
   margin: 14px 0;
   border: 0.8rem solid var(--color-blue-dark-1); }
-
-.img-container:hover .project-image {
-  border-color: var(--color-barberry-light-1); }
 
 .watch-btn {
   text-decoration: none;
@@ -335,17 +335,12 @@ body {
 .icon {
   margin: 0 15px 0 15px;
   stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  stroke: var(--color-barberry-light-1);
+  fill: var(--color-barberry-light-1);
   width: 8rem; }
   .icon:hover {
     cursor: pointer;
-    transform: scale(1.2);
-    stroke-width: 0;
-    stroke: var(--color-barberry-light-1);
-    fill: var(--color-barberry-light-1); }
-  .icon a:visited {
-    fill: #fff; }
+    transform: scale(1.2); }
   @media only screen and (max-width: 360px) {
     .icon {
       width: 6rem; } }

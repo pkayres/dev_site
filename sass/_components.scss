@@ -298,6 +298,10 @@
   align-items: center;
 }
 
+.img-container:hover .project-image {
+  border-color: var(--color-barberry-light-1);
+}
+
 .project-image {
   opacity: 1;
   display: absolute;
@@ -309,9 +313,7 @@
   border: .8rem solid var(--color-blue-dark-1);
 }
 
-.img-container:hover .project-image {
-  border-color: var(--color-barberry-light-1);
-}
+
 
 .watch-btn {
   text-decoration: none;
@@ -354,7 +356,6 @@
 .tech-text {
   box-shadow: 8px 8px 0 var(--color-blue-dark-1);
   background-color: var(--color-barberry-light-1);
-  // margin: 0 auto;
   padding: 10px;
   width: 90%;
 }
@@ -386,22 +387,10 @@
   background-color: var(--color-blue-dark-2);
   text-decoration: none;
 
-
-  // &__link {
-  //
-  //   color: #fff;
-  // }
-
-  // &:visited {
-  //   text-decoration: none;
-  //   color: #fff;
-  // }
-
   &:hover {
     transform: translate(2px, 2px);
     box-shadow: 4px 4px 0;
   }
-
 }
 
 
@@ -425,26 +414,20 @@
 .icon {
   margin: 0 15px 0 15px;
   stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  stroke: var(--color-barberry-light-1);
+  fill: var(--color-barberry-light-1);
   width: 8rem;
 
   &:hover{
     cursor: pointer;
     transform: scale(1.2);
-    stroke-width: 0;
-    stroke: var(--color-barberry-light-1);
-    fill: var(--color-barberry-light-1);
-  }
-
-  a:visited {
-    fill: #fff;
   }
 
   @media only screen and (max-width: 360px){
     width: 6rem;
   }
 }
+
 
 .resume-link {
   color: #fff;
